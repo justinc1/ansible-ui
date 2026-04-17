@@ -112,7 +112,17 @@ export function useAwxNavigation() {
           element: <AutomationDashboard />,
         },
       ]
-    : [];
+    : 
+      [
+        {
+          id: AwxRoute.AutomationDashboard,
+          label: t('Automation Dashboard'),
+          path: 'automation-dashboard',
+          element: <AutomationDashboard />,
+        },
+      ]
+    ;
+//    : [];
 
   const analyticsItems: PageNavigationItem[] = [
     {
